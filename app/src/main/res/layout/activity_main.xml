@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding = "10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold | italic"
+            android:layout_marginBottom="5dp"
+            android:text="SECQURAISE" />
+
+        <TextView
+            android:id="@+id/dateAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="17-03-2003 8:49am" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/horizontalTextView1"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Capture Count " />
+
+            <TextView
+                android:id="@+id/tvCaptureCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:textColor="#00FF00"
+                android:textSize="18sp"
+                android:text=" 0" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFreq"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Frequency(min) " />
+
+            <EditText
+                android:id="@+id/tvFreqValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#00FF00"
+                android:text="2"
+                android:textSize="18sp"
+                android:autofillHints="15" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/connectivity"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Connectivity " />
+
+            <TextView
+                android:id="@+id/connectivityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="#00FF00"
+                android:textSize="18sp"
+                android:text="OFF" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batteryCharging"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Battery Charging " />
+
+            <TextView
+                android:id="@+id/batteryChargingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="#00FF00"
+                android:textSize="18sp"
+                android:text="OFF" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batteryCharge"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Battery Charge " />
+
+            <TextView
+                android:id="@+id/batteryChargeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="#00FF00"
+                android:textSize="18sp"
+                android:text="56%" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Location " />
+
+            <TextView
+                android:id="@+id/tvLocationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="#00FF00"
+                android:textSize="18sp"
+                android:text="31.967095, 78.145844"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#5DADE2"
+            android:text="Manual Data Refresh " />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#5DADE2"
+            android:text="Change Frequency " />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

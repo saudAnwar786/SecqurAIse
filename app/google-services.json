@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503863749195",
+    "project_id": "fir-storage-52ccf",
+    "storage_bucket": "fir-storage-52ccf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503863749195:android:d15a8d473a10e4c3ea3bce",
+        "android_client_info": {
+          "package_name": "com.sacoding.secquraise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503863749195-ie4fmfobpqv7jq0lh9ngqqkmkk3987ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPdijWTrwwJPjgKF59gTbmCF0JkXDtIfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503863749195-ie4fmfobpqv7jq0lh9ngqqkmkk3987ta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
